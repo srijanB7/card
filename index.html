@@ -13,21 +13,21 @@
         />
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body>
-        <script>
-            function play() {
-                let audio = document.getElementById("audio");
-                audio.play();
-            }
-        </script>
+    <body onload="play()">
         <header>
             <img src="assets/left.png"/ class="left-image">
             <h1>To My Dearest Girlfriend</h1>
             <img src="assets/right.png"/ class="right-image">
         </header>
         <main>
-            <embed src="assets/song.mp3" loop="true" autostart="true" width="2" height="0">
-            <div class="container" onload="play()">
+            <embed
+                src="assets/song.mp3"
+                loop="true"
+                autostart="true"
+                width="2"
+                height="0"
+            />
+            <div class="container">
                 <p>
                     Life would be simply meaningless without you. Thank you for
                     being my girlfriend. Happy Valentine’s day, love. I may get
@@ -35,7 +35,7 @@
                     loving you. Life is nothing without loving you. Happy
                     Valentine Day!
                 </p>
-                <br>
+                <br />
                 <p>
                     I totally understand that the distance between us is just a
                     silly number and that it is just a temporary thing. I don’t
@@ -45,7 +45,7 @@
                     doing so. But there is this teeny-tiny part of me that wants
                     to able to celebrate ‘The Day Of Love‘ with you.
                 </p>
-                <br>
+                <br />
                 <p>
                     I tried so hard to pass it off as just another day in the
                     calendar. But I could not. The truth is that I miss you and
@@ -53,7 +53,7 @@
                     how much I love you, in person! Until then, I guess I’ll
                     just have to be patient - which I will be.
                 </p>
-                <br>
+                <br />
                 <p>
                     Last but not least, Happy Valentine’s Day, girlfriend
                     dearest. I love you so much, and you know that. I miss you
@@ -61,13 +61,17 @@
                     to go on, lots of silly things to be done, conversations
                     about everything under the sun to be had. Can’t wait.
                 </p>
-                <br>
+                <br />
                 <p>With Best Regards, Srijan</p>
-
             </div>
         </main>
         <audio controls loop class="music" id="audio">
-            <source src="assets/song.mp3" type="audio/mpeg">
-         </audio>
+            <source src="assets/song.mp3" type="audio/mpeg" />
+        </audio>
+        <script>
+            window.onload = function () {
+                document.getElementById("audio").play();
+            };
+        </script>
     </body>
 </html>
