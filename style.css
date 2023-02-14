@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    /* margin-bottom: 1px; */
+}
+h1 {
+    margin-top: 20px;
+    color: blueviolet;
+}
+
+main {
+    /* border: 1px solid yellow; */
+    height: 50vh;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    height: 50vh;
+}
+p {
+    flex-grow: 2;
+}
+@media (max-width: 900px) {
+    img {
+        max-width: 30%;
+    }
+    .container {
+        max-width: fit-content;
+    }
+}
+audio {
+    display: none;
+}
